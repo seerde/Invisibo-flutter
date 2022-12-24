@@ -16,6 +16,7 @@ class InvisiboCirclerContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(90),
       ),
       child: IconButton(
+        padding: EdgeInsets.zero,
         enableFeedback: true,
         splashRadius: 1,
         icon: icon,
