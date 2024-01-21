@@ -61,6 +61,23 @@ class _MySendButtonState extends State<MySendButton> {
             });
           },
           onTapUp: (details) {
+            // widget.onTap();
+            setState(() {
+              _isPressed = false;
+            });
+          },
+          onLongPressEnd: (details) {
+            widget.onTap();
+            setState(() {
+              _isPressed = false;
+            });
+          },
+          onHorizontalDragEnd: (details) {
+            setState(() {
+              _isPressed = false;
+            });
+          },
+          onVerticalDragEnd: (details) {
             setState(() {
               _isPressed = false;
             });

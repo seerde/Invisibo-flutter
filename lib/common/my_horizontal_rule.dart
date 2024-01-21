@@ -8,12 +8,10 @@ class MyHorizontalRule extends StatelessWidget {
     return Container(
       height: 8,
       width: 80,
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 155, 155, 155),
-        borderRadius: BorderRadius.all(Radius.circular(20)),
-        border: Border(
-          bottom: BorderSide(color: Colors.black),
-        ),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 155, 155, 155),
+        borderRadius: const BorderRadius.all(Radius.circular(20)),
+        border: Border.all(color: Colors.black),
       ),
       child: const Text(''),
     );
